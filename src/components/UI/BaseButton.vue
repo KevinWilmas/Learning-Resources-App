@@ -6,24 +6,24 @@
 
 <script>
 export default {
-  props: ['mode']
-}
+  props: ['mode'],
+};
 </script>
 
 <style scoped>
 button {
   padding: 0.75rem 1.5rem;
   font-family: inherit;
-  background-color: #3a0061;
-  border: 1px solid #3a0061;
+  background-color: #4297c1;
+  border: 1px solid #4297c1;
   color: white;
   cursor: pointer;
 }
 
 button:hover,
 button:active {
-  background-color: #270041;
-  border-color: #270041;
+  background-color: #4258c1;
+  border-color: #4258c1;
 }
 
 .flat {

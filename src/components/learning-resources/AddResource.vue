@@ -1,8 +1,15 @@
 <template>
-  <base-dialog v-if="inputIsInvalid" title="Invalid Input" @close="confirmError">
+  <base-dialog
+    v-if="inputIsInvalid"
+    title="Invalid Input"
+    @close="confirmError"
+  >
     <template #default>
       <p>Unfortunately, at least one input value is invalid.</p>
-      <p>Please check all inputs and make sure you enter at least a few characters into each input field.</p>
+      <p>
+        Please check all inputs and make sure you enter at least a few
+        characters into each input field.
+      </p>
     </template>
     <template #actions>
       <base-button @click="confirmError">Okay</base-button>
@@ -16,7 +23,12 @@
       </div>
       <div class="form-control">
         <label for="description">Description</label>
-        <textarea id="description" name="description" rows="3" ref="descInput"></textarea>
+        <textarea
+          id="description"
+          name="description"
+          rows="3"
+          ref="descInput"
+        ></textarea>
       </div>
       <div class="form-control">
         <label for="link">Link</label>
@@ -56,7 +68,7 @@ export default {
     },
     confirmError() {
       this.inputIsInvalid = false;
-    }
+    },
   },
 };
 </script>
@@ -80,7 +92,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #3a0061;
+  border-color: #4258c1;
   background-color: #f7ebff;
 }
 
